@@ -128,6 +128,8 @@ def product_detail_page(product_id):
             a("Go Back", href=request.referrer or url_for('main.home'), _class="back-button", style="display:block; text-align:center; background-color:#555; color:white; padding:10px; text-decoration:none; border-radius:5px; font-family:'RocaOne'; margin-top:15px;")
         add_question_mark_icon(mobile_view_div)
 
+    return doc.render()
+
 
 @bp.route('/cart/add/<int:product_id>')
 @login_required
