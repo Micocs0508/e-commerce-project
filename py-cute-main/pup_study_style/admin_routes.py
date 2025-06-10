@@ -1,4 +1,4 @@
-from flask import Blueprint, session, url_for, redirect
+from flask import Blueprint, session, url_for, redirect, request
 from .db import get_db
 from .ui_utils import create_base_document # No question mark icon for admin
 from .main_routes import login_required # Import login_required
